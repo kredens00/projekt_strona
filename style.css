@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    margin: 0 auto;
+   padding: 0;
+    background-image:url(grafika/tlo.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    font-family: 'Staatliches', cursive;
+    color: white;
+   
+}
+
+
+header{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: auto;
+    margin: 0;
+    background-image: url(grafika/bg.png);  
+    height: auto;
+    box-shadow: black 0 0 30px;
+    
+}
+
+
+
+.herb_photo{
+    height: 200px;
+    
+}
+
+
+
+nav {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 1;
+    
+    
+}
+
+.naglowek{
+    scroll-margin-top: 102px;
+}
+
+.glowna .naglowek{
+    font-size: 12vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    
+}
+.wstep{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 8vh;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    
+}
+
+
+.welcome{
+    color:  #E8C2CA;
+    text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+.next_game{
+    
+    font-size: 4vh;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+section .art{
+    
+    border: black 4px solid;
+    border-radius: 5px;
+    background-color: #E8C2CA;
+    flex-basis: auto;
+    
+}
+
+.end{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+
+}
+
+.onas{
+    font-size: 6vw;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    
+}
+
+.overlay{
+    position: relative;
+    width: 471px;
+    height: 586px;
+    
+}
+
+.overlay .link{
+    text-decoration: none;
+    position:absolute;
+    display: block;
+    width: 471px;
+    height: 100px;
+    background-color: #111;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: white;
+    
+}
+
+.overlay:hover .link{
+    opacity: 0.8;
+}
+
+.photo{
+    transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
+
+}
+
+.photo:hover{
+    transform: scale(0.9);
+}
+article{
+    
+    
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.media{
+    
+    color: black;
+    text-shadow: whitesmoke 0.1em 0.1em 0.1em;
+    font-size: 30px;
+    text-align: center;
+}
+
+.media img{
+    
+    width: 60px;
+    padding: 10px;
+}
+
+.icons{
+    display: inline-block;
+    padding: 20px;
+}
+
+
+
+
+
+li {
+    display: inline-block;
+}
+
+
+li a{
+    text-decoration: none;
+    padding: 10px;
+    
+    font-size: 40px;
+    color: white;
+}
+
+
+.nav_animation::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+.nav_animation:hover::before {
+    
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .nav_animation::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #E8C2CA;
+    z-index: -1;
+    transition: transform .3s ease;
+    border-radius: 8px;
+  }
+  
+.nav_animation {
+    position: sticky;
+    
+  }
+  
+.container{
+    width: 100vw;
+    box-sizing: border-box;
+    
+}
+
+
+  html {
+    
+    scroll-behavior: smooth;
+  }
+  
+   footer{
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+    background-color:  #FFE300;
+    height: 40px;
+    text-align: center;
+    
+    color: black;
+    text-shadow: whitesmoke 0.1em 0.1em 0.1em;
+    background-image: url(grafika/bg.png);  
+    
+  }
+
+  .artykul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+    #kolumny{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+    #euro
+{
+    min-width: 450px;
+    min-height: 600px;
+    border: 2px solid black;
+    box-shadow: black 0.1em 0.1em 0.1em;
+}
+
+    .tresc{
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: black 00.1em 0.1em 0.1em;
+    
+
+}
+
+    .typ{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    text-shadow: black 00.1em 0.1em 0.1em;
+}
+
+
+ a .link{
+    text-decoration: none;
+}
+
+    .picture
+{
+    border-radius: 6px;
+    border: 4px solid black;
+    box-shadow: black 0.2em 0.2em 0.2em 0.2em;
+    transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-height: 645px;
+    
+    
+}
+
+    #fix{
+    height: 645px;
+}
+
+    .picture2
+{
+    border-radius: 6px;
+    border: 4px solid black;
+    box-shadow: black 0.2em 0.2em 0.2em 0.2em;
+    transition: all 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+    max-height: 645px;
+    
+    
+}
+
+    #int{
+    align-items: space-around;
+}
+
+    .pictureH
+{
+    border-radius: 6px;
+    border: 4px solid black;
+    box-shadow: black 0.2em 0.2em 0.2em 0.2em;
+    transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-height: 450px;
+    align-self: center;
+    
+}
+
+    .picture2:hover
+{
+    transform: scale(1.15);
+}
+
+    .picture:hover
+{
+    transform: rotate(-10deg) scale(1.1);
+}
+
+    .tytul{
+    font-size: 8vh;
+    font-weight: bold;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    
+}
+
+
+    #wenger{
+    border-radius: 6px;
+    border: 4px solid black;
+    box-shadow: black 0.2em 0.2em 0.2em 0.2em;
+    height: 400px;
+    width: 800px;
+    position: relative;
+    left: 30%;
+
+    
+}
+
+    #stadium{
+    height: 450px;
+}
+
+    #gabriel{
+    flex-direction: column;
+}
+  
+    .trofea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+    .pictureT{
+    border-radius: 6px;
+    border: 4px solid black;
+    box-shadow: black 0.2em 0.2em 0.2em 0.2em;
+    
+   
+    
+}
+
+
+  @media (orientation: landscape) {
+    body {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+
+
+@media(max-width: 665px)
+{
+
+    .glowna .naglowek{
+        font-size: calc(5vh + 5vw);
+    }
+    .end {
+        font-size: calc(15px + 5vw);
+
+    }
+    
+    .end div{
+        width: 80vw;
+        padding: 5px;
+        
+        
+    }
+
+    nav{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        
+    }
+
+    section div{
+        
+      width: fit-content;
+        height: fit-content;
+    }
+
+    .welcome{
+        margin: 20px;
+    }
+    .wstep p{
+        
+        font-size: calc(30px + 5vw);
+    }
+
+
+    .link a{
+        text-align: center;
+    }
+    .link{
+        max-width: 98vw;
+        
+    }
+    .overlay{
+        width: fit-content;
+        height: fit-content;
+    }
+    .photo{
+        max-width: 100%;
+    }
+
+    header{
+        
+        width: 100vw;
+    }
+
+    .logo{
+       order: +1;
+    }
+    
+    .media{
+        max-width: calc(200px + 1vw);
+        margin: 2vw;
+    }
+    
+    #logo{
+        max-width: calc( 200px + 5vw);
+    }
+    
+    .herb_photo{
+        max-width: calc(200px + 5vw);
+    }
+
+    
+        figure .next_game{
+            max-width: calc(200px + 10vw);
+            align-self: center;
+        }
+
+}
+
+
+
+
+
+
+
+  @media (min-width: 665px) and (max-width: 1000px) {
+     
+    
+
+
+
+
+  }
+  
