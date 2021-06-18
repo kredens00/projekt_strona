@@ -1,9 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body {
-    
+    overflow-x: hidden;
     margin: 0 auto;
    padding: 0;
     background-image:url(grafika/tlo.jpg);
@@ -11,7 +8,7 @@ body {
     background-position: center;
     font-family: 'Staatliches', cursive;
     color: white;
-   
+    
 }
 
 
@@ -39,9 +36,11 @@ header{
 
 
 nav {
+
+    
     width: auto;
     height: auto;
-    padding: 10px;
+    
     text-align: center;
     text-shadow: black 0.2em 0.2em 0.2em;
     position: sticky;
@@ -66,7 +65,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     font-size: 8vh;
     text-shadow: black 0.2em 0.2em 0.2em;
@@ -81,7 +80,7 @@ nav {
 
 .next_game{
     
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 section{
@@ -108,11 +107,13 @@ section .art{
     flex-wrap: wrap;
     align-content: center;
     text-align: center;
+    
 
 }
 
 .onas{
-    font-size: 6vw;
+    text-align: center;
+    font-size: 3vh;
     text-shadow: black 0.1em 0.1em 0.1em;
     
 }
@@ -229,6 +230,7 @@ li a{
     width: 100vw;
     box-sizing: border-box;
     
+    
 }
 
 
@@ -275,6 +277,7 @@ li a{
     .tresc{
     font-family: 'Josefin Sans', sans-serif;
     text-shadow: black 00.1em 0.1em 0.1em;
+
     
 
 }
@@ -382,6 +385,7 @@ li a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 
 }
 
@@ -395,111 +399,242 @@ li a{
 }
 
 
-  @media (orientation: landscape) {
-    body {
-      display: flex;
-      flex-flow: column;
-    }
-  }
+  
 
 
-@media(max-width: 665px)
-{
+  @media(max-width: 665px)
+  {
+      html{
+          margin: 0;
+          padding: 0;
+      }
+  
+      .glowna .naglowek{
+          font-size: calc(5vh + 5vw);
+      }
+      .end {
+          font-size: calc(15px + 5vw);
+  
+      }
+      
+      .end div{
+          width: 80vw;
+          padding: 5px;
+          
+          
+      }
+  
+      li a{
+          font-size: calc(10px + 5vw);
+      }
 
-    .glowna .naglowek{
-        font-size: calc(5vh + 5vw);
-    }
-    .end {
-        font-size: calc(15px + 5vw);
+      nav{
+          text-align: left;
+          display: flex;
+          flex-flow: column;
 
-    }
-    
-    .end div{
-        width: 80vw;
-        padding: 5px;
-        
-        
-    }
-
-    nav{
-        display: flex;
-        flex-flow: column;
-        text-align: center;
-        
-    }
-
-    section div{
-        
-      width: fit-content;
-        height: fit-content;
-    }
-
-    .welcome{
-        margin: 20px;
-    }
-    .wstep p{
-        
-        font-size: calc(30px + 5vw);
-    }
-
-
-    .link a{
-        text-align: center;
-    }
-    .link{
-        max-width: 98vw;
-        
-    }
-    .overlay{
+         }
+  
+      section div{
+          
         width: fit-content;
-        height: fit-content;
-    }
-    .photo{
-        max-width: 100%;
-    }
+          height: fit-content;
+      }
+  
+      .welcome{
+          margin: 20px;
+      }
+      .wstep p{
+          
+          font-size: calc(30px + 5vw);
+      }
+  
+  
+      .link a{
+          text-align: center;
+      }
+      .link{
+          max-width: 98vw;
+          
+      }
+      .overlay{
+          width: fit-content;
+          height: fit-content;
+      }
+      .photo{
+          max-width: 100%;
+      }
+  
+      header{
+          
+          width: 100vw;
+      }
+  
+      .logo{
+         order: +1;
+      }
+      
+      .media{
+          max-width: calc(200px + 1vw);
+          margin: 2vw;
+      }
+      
+      #logo{
+          max-width: calc( 200px + 5vw);
+      }
+      
+      .herb_photo{
+          max-width: calc(150px + 5vw);
+      }
+  
+      
+          figure .next_game{
+              max-width: calc(200px + 10vw);
+              align-self: center;
+          }
 
-    header{
+          .artykul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            
+        }
+        .tytul{
+            font-size: calc(3vh + 5vw);
+        }
         
-        width: 100vw;
-    }
-
-    .logo{
-       order: +1;
-    }
-    
-    .media{
-        max-width: calc(200px + 1vw);
-        margin: 2vw;
-    }
-    
-    #logo{
-        max-width: calc( 200px + 5vw);
-    }
-    
-    .herb_photo{
-        max-width: calc(200px + 5vw);
-    }
-
-    
-        figure .next_game{
-            max-width: calc(200px + 10vw);
-            align-self: center;
+        #shirt{
+            width: calc(250px +  20vw);
+        }
+        .picture{
+            
+            margin-bottom: 20px;
+            max-height: fit-content;
+        }
+        #fix{
+            width: calc(250px +  20vw);
+            height: calc(250px +  20vw);
+        }
+        .picture2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-height: fit-content;
+        }
+        
+        #euro{
+            min-width: 200px;
+            min-height: 200px;
+            max-height:calc(300px + 10vw);
+            max-width: calc(300px + 10vw);
+            
         }
 
-}
+        #kolumny {
+            
+            flex-flow: column;
+            
+            
 
+        }
+        .tresc{
+            font-size: 2vh;
+        }
 
+        #wenger {
+            width: calc(300px + 10vw);
+            height: calc(300px + 10vw);
+            position: relative;
+            left: 5%;
+        }
 
+        #stadium{
+            height: calc(200px + 10vw);
+            max-width: 98vw;
 
-
-
-
-  @media (min-width: 665px) and (max-width: 1000px) {
-     
+        }
+        .pictureH{
+            max-height: calc(200px + 10vw);
+           
+        }
+        .trophies{
+            width: calc(300px + 10vw );
+        }
+       
+           
     
-
-
 
 
   }
   
+  
+  
+  
+  
+  
+  
+    @media (min-width: 665px) and (max-width: 1024px) {
+       
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo{
+            order: +1;
+         }
+         
+         .media{
+            
+            margin: 1vw;
+        }
+
+         .artykul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            
+        }
+
+        .tytul{
+            font-size: calc(1vh + 5vw);
+        }
+        
+        #shirt{
+            width: calc(650px +  10vw);
+        }
+        .tresc{
+            font-size: 2vh;
+        }
+        
+        #fix{
+            width: calc(650px + 10vw);
+            height: calc(450px + 10vw);
+        }
+  
+        #euro{
+            min-width: 600px;
+            min-height: 450px;
+            max-height:calc(600px + 10vw);
+            max-width: calc(600px + 10vw);
+            
+        }
+
+        #wenger {
+            
+            max-width: calc(650px + 2vw);
+            position: relative;
+            left: 10%;
+        }
+        #stadium{
+            height: calc(400px + 10vw);
+            max-width: 98vw;
+
+        }
+        .pictureH{
+            max-height: calc(400px + 10vw);
+           
+        }
+    }
+    
